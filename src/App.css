@@ -1,0 +1,26 @@
+.universal_heading
+{
+    text-align: center;
+    font-size: 20px;
+    color: #1a1a1a;
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+@media screen and (max-width:766px)
+{
+    .universal_heading
+    {
+        font-size: 17px;
+    }
+}
+.scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    
+}    
+.card {
+      flex: 0 0 auto;
+      width: 500px;
+    }

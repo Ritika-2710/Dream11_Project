@@ -1,0 +1,44 @@
+.fourth_part_div
+{
+    
+    margin:20px 0;
+    padding:20px;
+}
+.app_text_ul
+{
+    padding: 0;
+    padding-right: 20px;
+}
+.app_text_li
+{
+    display: flex;
+    align-items: center;
+}
+.app_get_icon
+{
+    margin-right: 10px;
+}
+.app_get_icon img{
+    width:50px;
+}
+.app_get_text
+{
+    display: inline-block;
+    font-size: 15px;
+    text-align: justify;
+    padding-right: 30px;
+}
+.first_image
+{
+    margin-right: 6%;
+}
+.app_code
+{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.app_code>p{
+    padding-right: 36%;
+    font-size: 14px;
+}
