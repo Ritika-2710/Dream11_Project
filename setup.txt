@@ -1,0 +1,5 @@
+Setup::
+1) Using xampp create database 
+2) Then import sql file (PATH python/database.sql)
+3) execute database.py using cmd(python database.py)
+4) now last step execute react app (npm start)
