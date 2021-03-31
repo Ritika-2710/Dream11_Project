@@ -1,8 +1,12 @@
-.fourth_part_div
+.fourth_part_div1
 {
-    
+    padding:0px;
+    margin-top: 30px;
+}
+.fourth_part_div2
+{
     margin:20px 0;
-    padding:20px;
+    padding-right:20px;
 }
 .app_text_ul
 {
@@ -25,8 +29,9 @@
 {
     display: inline-block;
     font-size: 15px;
-    text-align: justify;
+    text-align: left;
     padding-right: 30px;
+    margin-bottom: 10px;
 }
 .first_image
 {
@@ -41,4 +46,51 @@
 .app_code>p{
     padding-right: 36%;
     font-size: 14px;
+}
+@media screen and (min-width:1200px)
+{
+    .fourth_part_div1
+    {
+        margin-top: 0;
+    }
+   
+}
+@media screen and (max-width:900px)
+{
+    .app_get_text
+    {
+        font-size: 14px;
+        padding-right: 0;
+    }   
+}
+@media screen and (max-width:973px)
+{
+    .app_code>p{
+        padding-right: 31%;
+    }   
+}
+@media screen and (max-width:767px)
+{
+    .fourth_part_div1
+    {
+       max-width: 540px;
+    }
+    .fourth_part_div2
+    {
+       margin-left: 20px;
+    }
+    .app_button>div>img
+    {
+        width: 45%;
+    }   
+    .app_text_li{
+        margin-bottom: 0;
+    }
+    .app_text_ul
+    {
+        padding: 0;
+    }
+    .app_code{
+        display: none;
+    }
 }

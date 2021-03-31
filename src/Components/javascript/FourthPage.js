@@ -8,10 +8,16 @@ function FourthPage()
        <section className="FourthPage">
            <Container>
                <Row>
-                   <Col md={6} lg={6} className="fourth_part_div">
+                   <Col lg={12}>
+                   <h2 className="universal_heading">Compete with other sports fans and 
+                   <span style={{color:"red"}}> Win</span></h2>
+                   </Col>
+               </Row>
+               <Row>
+                   <Col md={6} lg={6} className="fourth_part_div1">
                        <img src="../images/get_app_banner.webp" width="100%"/>
                    </Col>
-                   <Col md={6} lg={6} className="fourth_part_div">
+                   <Col md={6} lg={6} className="fourth_part_div2">
                        <div className="app_text">
                            <ul className="app_text_ul">
                               <FourthPage_subpart img="../images/win_crore_1.webp" text="Play with over 10 Crore Dream11 users in public 

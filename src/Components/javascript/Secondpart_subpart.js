@@ -8,9 +8,9 @@ function Secondpart_subpart(props)
                 <div className="divpart">
                     <span>{props.number}</span>
                     <div className="title_name">
-                        <div>{props.title}</div>
+                        <h5>{props.title}</h5>
                         <div class="title_image">
-                            <img src={props.image} width="100%"/>
+                            <img src={"../images/info/image"+props.image+".png"} width="100%"/>
                         </div>
                     </div>
                     <div className="title_description">{props.description}</div>

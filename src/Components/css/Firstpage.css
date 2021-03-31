@@ -5,12 +5,37 @@
 }
 .Main_container
 {
+    background-size: 519px;
+    display: block;
+    background-repeat: no-repeat;
     height:400px;
+}
+@media (max-width:991px){
+    .Main_container{
+        background-size: cover;
+        display: block !important;
+        background-position: center;
+    }
 }
 .logo
 {
     width:120px;
     margin-top:35px;
+}
+.mobile_logo_box
+{
+    display: none;
+}
+@media (max-width:991px){
+  .mobile_logo_box{
+      width:66px;
+      margin:0 auto;
+      display: block;
+      margin-top: 10px !important;
+  }
+  .logo{
+      display: none;
+  }
 }
 @media (max-width:991px){
     .Main_container
@@ -70,6 +95,14 @@
         border-radius: 7px;
         margin-top: auto;
         margin-bottom:20px;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+@media (max-width:580px){
+    .download-btn{
+        margin-left:15px;
     }
 }
 .col1
@@ -136,5 +169,26 @@
     }
     /* .steps_ul li{
         width: 100%;
+    } */
+}
+.download_mobile
+{
+    width: 100%;
+    margin-top: auto;
+    margin-left: 15px;
+}
+
+@media (max-width:991px){
+    /* .download_mobile.active{
+        padding: 5px;
+        background:#fff;
+        height: fit-content;
+        position: fixed;
+        bottom:0;
+        z-index: 10000;
+        margin-left: 0px;
+    }   
+    .download_mobile.active button{
+        margin-bottom:0;
     } */
 }

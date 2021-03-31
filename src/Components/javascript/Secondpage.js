@@ -1,10 +1,17 @@
+import { useEffect,useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import '../css/Secondpage.css'
 import Secondpart_subpart from "./Secondpart_subpart";
 function Secondpage()
 {
+    let [items, setData] = useState(null);
+    useEffect(() => {
+        fetch('/info')
+        .then(res =>res.json())
+        .then(data=>setData(data))
+      },[]);
     return(
-        <div>
+        <>
             <section className="Secondpage">
                 <Container>
                     <Row>
@@ -15,26 +22,23 @@ function Secondpage()
                     <Row>
                         <Col lg={12}>
                             <ul className="steps_ul">
-                            <Secondpart_subpart title="Select a Match" 
-                            number="1" 
-                            description="Choose an upcoming match that you want to play" 
-                            image="../images/image1.png"/>
-                            <Secondpart_subpart
-                            title="Create Team" 
-                            number="2" 
-                            description="Use your skills to pick the right players" 
-                            image="../images/image1.png"/>
-                            <Secondpart_subpart
-                            title="Join Contests" 
-                            number="3" 
-                            description="Choose between different contests and win money" 
-                            image="../images/image1.png"/>
+                            {
+                                !items ? null :items.map((value, index) => {
+                                    return (
+                                        <Secondpart_subpart title={value[1]} 
+                                        number={value[0]} 
+                                        description={value[2]} 
+                                        image={value[0]}/>
+                                    )
+                                })
+                            }
+                            
                             </ul>
                         </Col>
                     </Row>
                 </Container> 
             </section>
-        </div>
+        </>
     )
 }
 export default Secondpage

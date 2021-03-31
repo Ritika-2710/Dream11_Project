@@ -4,13 +4,14 @@
 }
 .image_div
 {
-  max-width:400px;
+  max-width:477px;
   padding:20px;
   border-radius:7px;
   box-shadow: 0px 0px 8px 0px rgb(194 194 194);
   box-sizing: border-box;
   text-align: center;
   margin: 0 auto;
+  background: #fff;
 }
 .thirdpage_ul
 {
@@ -23,6 +24,7 @@
     overflow-x: auto;
     margin-right:10px;
     overflow-y:hidden;
+    margin:20px 0;
 }
 .slide
 {
@@ -33,6 +35,9 @@
     height: 260px;
     box-shadow: 0px 0px 8px 0px rgb(194 194 194);
     flex:0 0 auto;
+    border-radius: 8px;
+    background: #fff;
+    box-sizing: border-box;
 }
 
 .top_part_slide{
@@ -59,13 +64,17 @@
     background: #1a1a1a;
     height: 56px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     box-sizing: border-box;
     padding: 8px 16px;
 }
 .user_text_right
 {
     text-align: right;
+}
+.user_text_right>.main_text
+{
+    font-size: 20px;
 }
 .main_text
 {
@@ -92,11 +101,27 @@
     line-height: 20px;
     background: none;
 }
+@media screen and (max-width:991px)
+{
+    .slide:first-child
+    {
+       display: inline-block;
+       margin-left:40px;
+    }
+    .middle_part_slide
+    {
+        grid-template-columns: 2fr 1fr;
+    }
+}
 @media screen and (max-width:766px)
 {
     .slide
     {
-       width:100%;
-       margin:20px;
+       width:280px;
+       height:257px;
+    }
+    .middle_part_slide
+    {
+        grid-template-columns: 1.5fr 1fr;
     }
 }

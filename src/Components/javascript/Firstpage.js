@@ -1,27 +1,29 @@
 import '../css/Firstpage.css'
 import {Col, Container, Row } from "react-bootstrap";
+let style={
+    backgroundImage: "url('../images/mobile_banne.png')",
+    width:"100%"
+}
 function Firstpage()
 {
-    const style={
-        backgroundImage: "url('../images/mobile_banne.png')",
-        backgroundSize:"591px",
-        backgroundRepeat:"no-repeat",
-    }
     return(
         <div>
          <section  className="Mainpage">
              <Container style ={style} className="Main_container">
                  <Row>
-                     <Col lg={12} className="plr-0 ptb-0"s>
+                     <Col lg={12} className="plr-0 ptb-0">
                        <img src="../images/download.webp" className="logo"/>
+                       <div className="mobile_logo_box">
+                           <img src="../images/logo_mobile.png" width="100%"/>
+                       </div>
                      </Col>
                  </Row>    
-                 <Row className="Main_row">
+                 <Row className="Main_row w-100">
                      <Col md={6} lg={6}>
                          <div className="left-part">
                          </div> 
                      </Col>
-                     <Col md={6} lg={6}>
+                     <Col className="w-100 pr-0 pl-0"  md={6} lg={6}>
                          <div className="right-part">
                                 <div className="internal-details">
                                     <p>Download the official Dream11 app</p>
@@ -30,7 +32,7 @@ function Firstpage()
                                         <button className="formbutton">Get App Link</button>
                                     </div>
                                 </div>
-                                <button class="download-btn">Download</button>
+                                <button class="download-btn">Download App</button>
                          </div>
                      </Col>
                  </Row>

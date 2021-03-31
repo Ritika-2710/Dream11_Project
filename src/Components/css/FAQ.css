@@ -1,0 +1,30 @@
+.FAQ
+{
+    background: #f5f5f5;
+    padding-bottom: 30px;
+}
+.question-parent{
+    margin-bottom: 20px;
+    border:1px solid #dadada;
+    padding:8px 15px;
+    border-radius: 4px;
+    background-color: white;
+}
+.question-child{
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.question{
+    font-weight: 500;
+}
+.answer{
+    display: none;
+    font-size: 13px;
+}
+.fachev
+{
+    display: none;
+}
