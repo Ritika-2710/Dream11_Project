@@ -1,8 +1,8 @@
 import { useEffect,useState } from "react";
-import '../css/Thirdpage.css'
 import { Col, Container, Row } from "react-bootstrap";
-import Thirdpage_subpart from './Thirdpage_subpart';
-function ThirdPage()
+import PlayerInformation from './playerInformation';
+import './players.scss';
+function Players()
 {
     let [items, setData] = useState(null);
     useEffect(() => {
@@ -12,7 +12,7 @@ function ThirdPage()
       },[]);
     return(
         <>
-            <section className="thirdpage">
+            <section className="players">
               <Container>
                   <Row>
                       <Col lg={12}>
@@ -31,10 +31,10 @@ function ThirdPage()
                       {
                         !items ? null :items.map((value, index) => {
                             return (
-                                <Thirdpage_subpart imageval={value[0]} name={value[1]}
-                                team={value[2]}
-                                price={value[3]}
-                                description={value[4]}/>
+                                <PlayerInformation playerImage={value[0]} playerName={value[1]}
+                                                   playerTeam={value[2]}
+                                                   playerPrice={value[3]}
+                                                   playerDescription={value[4]}/>
                             )
                         })
                       }
@@ -45,4 +45,4 @@ function ThirdPage()
         </>
     )
 }
-export default ThirdPage
+export default Players

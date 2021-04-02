@@ -1,4 +1,4 @@
-function FourthPage_subpart(props)
+function GuidelineDetails(props)
 {
     return(
         <>
@@ -11,4 +11,4 @@ function FourthPage_subpart(props)
         </>
     )
 }
-export default FourthPage_subpart
+export default GuidelineDetails

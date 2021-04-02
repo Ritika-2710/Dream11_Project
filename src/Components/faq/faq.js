@@ -1,8 +1,8 @@
 import { useEffect,useState } from "react";
 import { Col,Row, Container } from "react-bootstrap";
-import '../css/FAQ.css'
-import FAQ_Main from "./FAQ_Main";
-function FAQ()
+import './faq.css'
+import FaqQuestions from "./faqQuestions";
+function Faq()
 {
     let [items, setData] = useState(null);
     useEffect(() => {
@@ -16,7 +16,7 @@ function FAQ()
             <Container>
                 <Row>
                     <Col lg={12} className="text-center">
-                       <h2 className="universal_heading">Fantasy Cricket <span style={{color:"red"}}>FAQ</span></h2>
+                       <h2 className="universal_heading">Fantasy Cricket <span style={{color:"red"}}>Faq</span></h2>
                     </Col>
                 </Row>
                 <Row className="mt-3">
@@ -24,7 +24,7 @@ function FAQ()
             {
                 !items ? null :items.map((value, index) => {
                     return (
-                        <FAQ_Main question={value[1]} answer={value[2]}/>
+                        <FaqQuestions question={value[1]} answer={value[2]}/>
                     )
                 })
             }
@@ -34,4 +34,4 @@ function FAQ()
         </section>
     );
 }
-export default FAQ
+export default Faq

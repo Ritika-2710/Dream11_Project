@@ -1,11 +1,11 @@
 import { Col,Row, Container } from "react-bootstrap";
-import '../css/FAQ.css'
+import './faq.css'
 import $ from 'jquery';
 function Slider(e){
     $('.answer',e.currentTarget).slideToggle();
     $('.fachev1',e.currentTarget).toggleClass('fa-chevron-down');
 }
-function FAQ_Main(props)
+function FaqQuestions(props)
 {
     return(
         <>
@@ -20,4 +20,4 @@ function FAQ_Main(props)
         </>
     )
 }
-export default FAQ_Main
+export default FaqQuestions

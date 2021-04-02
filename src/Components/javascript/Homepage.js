@@ -1,21 +1,21 @@
-import FAQ from "./FAQ";
-import FAQ_Main from "./FAQ_Main";
-import Firstpage from "./Firstpage";
-import Footer from "./Footer";
-import FourthPage from "./FourthPage";
-import Secondpage from "./Secondpage";
-import ThirdPage from "./ThirdPage";
+import Faq from "../faq/faq";
+import FaqQuestions from "../faq/faqQuestions";
+import Banner from "../banner/banner";
+import Footer from "../footer/footer";
+import Guidelines from "../dream11Guidelines/guidelines";
+import Steps from "../steps/steps";
+import Players from "../players/players";
 
 function Homepage()
 {
     return(
         <div>
-            <Firstpage/>
-            <Secondpage/>
+            <Banner/>
+            <Steps/>
             <div>
-                <ThirdPage/>
-                <FourthPage/>
-                <FAQ/>
+                <Players/>
+                <Guidelines/>
+                <Faq/>
                 <Footer/>
             </div>
         </div>

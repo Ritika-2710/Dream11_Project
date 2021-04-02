@@ -1,7 +1,7 @@
 import { Col,Row, Container } from "react-bootstrap";
-import '../css/FourthPage.css'
-import FourthPage_subpart from "./FourthPage_subpart";
-function FourthPage()
+import './guidelines.css'
+import GuidelineDetails from "./guidelineDetails";
+function Guidelines()
 {
     return(
        <>
@@ -20,10 +20,10 @@ function FourthPage()
                    <Col md={6} lg={6} className="fourth_part_div2">
                        <div className="app_text">
                            <ul className="app_text_ul">
-                              <FourthPage_subpart img="../images/win_crore_1.webp" text="Play with over 10 Crore Dream11 users in public 
+                              <GuidelineDetails img="../images/win_crore_1.webp" text="Play with over 10 Crore Dream11 users in public
                               contests or create your own private contest"/>
-                              <FourthPage_subpart img="../images/win_crore_2.webp" text="Chat with friends on Groups and challenge them to contests"/>
-                              <FourthPage_subpart img="../images/win_crore_3.webp" text="Invite others and earn Rs.100 Cash Bonus for each friend that joins"/>
+                              <GuidelineDetails img="../images/win_crore_2.webp" text="Chat with friends on Groups and challenge them to contests"/>
+                              <GuidelineDetails img="../images/win_crore_3.webp" text="Invite others and earn Rs.100 Cash Bonus for each friend that joins"/>
                            </ul>
                        </div>
                        <div className="app_button">
@@ -43,4 +43,4 @@ function FourthPage()
        </>
     )
 }
-export default FourthPage
+export default Guidelines

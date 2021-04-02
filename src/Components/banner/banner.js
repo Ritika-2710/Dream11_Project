@@ -1,10 +1,10 @@
-import '../css/Firstpage.css'
+import './banner.css'
 import {Col, Container, Row } from "react-bootstrap";
 let style={
     backgroundImage: "url('../images/mobile_banne.png')",
     width:"100%"
 }
-function Firstpage()
+function Banner()
 {
     return(
         <div>
@@ -65,4 +65,4 @@ function Firstpage()
         </div>
     )
 }
-export default Firstpage
+export default Banner

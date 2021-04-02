@@ -1,8 +1,8 @@
 import { useEffect,useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import '../css/Secondpage.css'
-import Secondpart_subpart from "./Secondpart_subpart";
-function Secondpage()
+import './steps.css'
+import StepDetails from "./stepDetails";
+function Steps()
 {
     let [items, setData] = useState(null);
     useEffect(() => {
@@ -25,10 +25,10 @@ function Secondpage()
                             {
                                 !items ? null :items.map((value, index) => {
                                     return (
-                                        <Secondpart_subpart title={value[1]} 
-                                        number={value[0]} 
-                                        description={value[2]} 
-                                        image={value[0]}/>
+                                        <StepDetails title={value[1]}
+                                                     number={value[0]}
+                                                     description={value[2]}
+                                                     image={value[0]}/>
                                     )
                                 })
                             }
@@ -41,4 +41,4 @@ function Secondpage()
         </>
     )
 }
-export default Secondpage
+export default Steps

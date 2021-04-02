@@ -1,5 +1,5 @@
 import { useEffect,useState } from "react";
-import Secondpart_subpart from "./Secondpart_subpart";
+import StepDetails from "../steps/stepDetails";
 function Fetch()
 {
     const [items, setData] = useState(null);
