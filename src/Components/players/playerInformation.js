@@ -3,8 +3,8 @@ function PlayerInformation(props)
     return(
             <div className="slide">
                 <div className="top_part_slide">
-                    <div class="user_image">
-                        <img src={`../images/userimages/userimage${props.playerImage}.png`} width="100%"/>
+                    <div className="user_image">
+                        <img src={`../images/players/userimage${props.playerImage}.png`} width="100%"/>
                     </div>
                     <div className="user_name">{props.playerName}</div>
                 </div>
@@ -19,9 +19,7 @@ function PlayerInformation(props)
                     </div>
                 </div>
                 <div className="bottom_part_slide">
-                    <textarea className="textarea">
-                    {props.playerDescription}
-                    </textarea>
+                    <textarea className="textarea" defaultValue={props.playerDescription}></textarea>
                 </div>
             </div>
     )

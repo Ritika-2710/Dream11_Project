@@ -9,8 +9,8 @@ function FaqQuestions(props)
 {
     return(
         <>
-                <div className="question-parent" onClick={((e) => Slider(e))}>
-                    <div className="question-child">
+                <div className="questionParent" onClick={((e) => Slider(e))}>
+                    <div className="questionChild">
                         <p className="question mb-0">{props.question}</p>
                         <span className="fa fa-chevron-up fa-chevron-down fachev1"></span>
                     </div>

@@ -12,20 +12,20 @@ function Steps()
       },[]);
     return(
         <>
-            <section className="Secondpage">
+            <section className="steps">
                 <Container>
                     <Row>
-                        <Col lg={12} className="secondpage_heading pl-4">
+                        <Col lg={12} className="stepsHeading pl-4">
                           <h2 className="universal_heading">It's easy to start playing on <span style={{color:"red"}}>Dream11</span></h2>
                         </Col>
                     </Row>
                     <Row>
                         <Col lg={12}>
-                            <ul className="steps_ul">
+                            <ul className="stepsUl">
                             {
                                 !items ? null :items.map((value, index) => {
                                     return (
-                                        <StepDetails title={value[1]}
+                                        <StepDetails key={index} title={value[1]}
                                                      number={value[0]}
                                                      description={value[2]}
                                                      image={value[0]}/>

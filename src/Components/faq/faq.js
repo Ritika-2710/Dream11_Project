@@ -12,7 +12,7 @@ function Faq()
       },[]);
 
     return(
-        <section className="FAQ">
+        <section className="faq">
             <Container>
                 <Row>
                     <Col lg={12} className="text-center">
@@ -24,7 +24,7 @@ function Faq()
             {
                 !items ? null :items.map((value, index) => {
                     return (
-                        <FaqQuestions question={value[1]} answer={value[2]}/>
+                        <FaqQuestions key={index} question={value[1]} answer={value[2]}/>
                     )
                 })
             }

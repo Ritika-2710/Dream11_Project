@@ -4,16 +4,16 @@ function StepDetails(props)
 {
     return(
         <>
-            <li className="steps_list">
-                <div className="divpart">
+            <li className="stepsList">
+                <div className="stepDescription">
                     <span>{props.number}</span>
-                    <div className="title_name">
+                    <div className="titleName">
                         <h5>{props.title}</h5>
-                        <div class="title_image">
-                            <img src={`../images/info/image${props.image}.png`} width="100%"/>
+                        <div className="titleImage">
+                            <img src={`../images/steps/image${props.image}.png`} width="100%"/>
                         </div>
                     </div>
-                    <div className="title_description">{props.description}</div>
+                    <div className="titleDescription">{props.description}</div>
                 </div>
             </li>
         </>

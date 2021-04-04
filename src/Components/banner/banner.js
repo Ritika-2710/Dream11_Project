@@ -1,61 +1,61 @@
 import './banner.css'
 import {Col, Container, Row } from "react-bootstrap";
 let style={
-    backgroundImage: "url('../images/mobile_banne.png')",
+    backgroundImage: "url('../images/banner/mobile_banne.png')",
     width:"100%"
 }
 function Banner()
 {
     return(
         <div>
-         <section  className="Mainpage">
-             <Container style ={style} className="Main_container">
+         <section  className="banner">
+             <Container  style ={style}>
                  <Row>
                      <Col lg={12} className="plr-0 ptb-0">
-                       <img src="../images/download.webp" className="logo"/>
-                       <div className="mobile_logo_box">
-                           <img src="../images/logo_mobile.png" width="100%"/>
+                       <img src="../images/banner/download.webp" className="logo"/>
+                       <div className="mobileLogoBox">
+                           <img src="../images/banner/logo_mobile.png" width="100%"/>
                        </div>
                      </Col>
                  </Row>    
-                 <Row className="Main_row w-100">
+                 <Row className="mainRow w-100">
                      <Col md={6} lg={6}>
-                         <div className="left-part">
+                         <div className="bannerImage">
                          </div> 
                      </Col>
                      <Col className="w-100 pr-0 pl-0"  md={6} lg={6}>
-                         <div className="right-part">
-                                <div className="internal-details">
+                         <div className="bannerDescription">
+                                <div className="bannerDetails">
                                     <p>Download the official Dream11 app</p>
-                                    <div className="forminput">
+                                    <div className="formInput">
                                         <input type="text" placeholder="Enter Mobile Number"/>
-                                        <button className="formbutton">Get App Link</button>
+                                        <button className="formButton">Get App Link</button>
                                     </div>
                                 </div>
-                                <button class="download-btn">Download App</button>
+                                <button className="downloadBtn">Download App</button>
                          </div>
                      </Col>
                  </Row>
              </Container>
          </section>
          <section>
-             <Row className="col1">
-                 <Col xs={6} md={6}  lg={6} className="username_right">
-                     <div className="userbox_inner_desktop">
+             <Row className="usersTotal">
+                 <Col xs={6} md={6}  lg={6} className="usersTotalRight">
+                     <div className="usersInnerDesktop">
                         <div>10 Crore+</div>
                         <p>USERS</p>
                      </div>
-                     <div className="userbox_inner_mobile">
+                     <div className="usersInnerMobile">
                         <div>10&nbsp;Cr+</div>
                         <p>Users</p>
                      </div>
                  </Col>
-                 <Col xs={6} md={6} lg={6} className="username_left">
-                 <div class="userbox_inner_desktop">
+                 <Col xs={6} md={6} lg={6} className="usersTotalLeft">
+                 <div className="usersInnerDesktop">
                         <div>25&nbsp;Crore+</div>
                         <p>USERS</p>
                  </div>
-                 <div class="userbox_inner_mobile">
+                 <div className="usersInnerMobile">
                         <div>25&nbsp;Cr+</div>
                         <p>Winnings</p>
                      </div>

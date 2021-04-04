@@ -1,11 +1,11 @@
-.Footer
+.footer
 {
     background: #373737;
     color: #fff;
     padding-top: 62px;
     font-size: 14px;
 }
-.social_icons>span
+.socialIcons>span
 {
     width: 32px;
     height: 32px;
@@ -18,10 +18,10 @@
     text-align: center;
     font-size: 21px;
 }
-.social_icons>span:last-child{
+.socialIcons>span:last-child{
     margin-right: 0;
 }
-.logo_first,.logo_second
+.firstLogo,.secondLogo
 {
     display: flex;
     justify-content: center;
@@ -29,44 +29,44 @@
     flex-direction: column;
     margin-bottom: 30px;
 }
-.logo_first>img,.logo_second>img{
+.firstLogo>img,.secondLogo>img{
     width: 38px;
     height: 46px;
 
 }
-.footer_first
+.footerFirst
 {
     border-bottom: 1px solid #828282;
     font-weight: 600;
     padding-bottom: 30px;
 }
-.footer_second
+.footerSecond
 {
     padding-top:20px;
     padding-bottom: 10px;
     text-align: center;
 }
-.footer_second>h4{
+.footerSecond>h4{
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.footer_secondpart1
+.policyOne
 {
     text-align: end;
     border-right: 1px solid #828282;
     padding-right: 40px;
 }
-.footer_secondpart1,.footer_secondpart2{
+.policyOne,.policyTwo{
     height: fit-content;
 }
-.footer_secondpart1 p{
+.policyOne p{
     margin-bottom: 0;;
 }
-.footer_secondpart2 p{
+.policyTwo p{
     padding-left: 25px;
 }
-.policies_row
+.policies
 {
     background: #282828;
     padding:20px 0;
@@ -74,7 +74,7 @@
     font-size: 16px;
     font-weight: 600;
 }
-.footer_first_mobile,.footer_row_mobile
+.footerFirstMobile,.footerRowMobile
 {
     display: none;
 }
@@ -88,23 +88,23 @@
 }
 @media screen and (max-width:765px)
 {
-    .footer_first_mobile
+    .footerFirstMobile
     {
         display:flex;
         font-weight: 600;
         margin-bottom: 30px;
     }
-    .footer_first
+    .footerFirst
     {
         display: none;
     }
-    .footer_col
+    .footerCol
     {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .footer_row_mobile
+    .footerRowMobile
     {
         display: flex;
         border-top:1px solid #828282;
@@ -115,7 +115,7 @@
         justify-content: center;
         align-items: center;
     }
-    .logo_first
+    .firstLogo
     {
         margin-bottom: 0;
     }

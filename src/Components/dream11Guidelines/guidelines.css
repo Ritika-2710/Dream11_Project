@@ -1,9 +1,9 @@
-.fourth_part_div1
+.guidelinesImage
 {
     padding:0px;
     margin-top: 30px;
 }
-.fourth_part_div2
+.guidelinesInformation
 {
     margin:20px 0;
     padding-right:20px;
@@ -33,23 +33,23 @@
     padding-right: 30px;
     margin-bottom: 10px;
 }
-.first_image
+.firstImage
 {
     margin-right: 6%;
 }
-.app_code
+.appCode
 {
     display: flex;
     align-items: center;
     margin-top: 20px;
 }
-.app_code>p{
+.appCode>p{
     padding-right: 36%;
     font-size: 14px;
 }
 @media screen and (min-width:1200px)
 {
-    .fourth_part_div1
+    .guidelinesImage
     {
         margin-top: 0;
     }
@@ -65,21 +65,21 @@
 }
 @media screen and (max-width:973px)
 {
-    .app_code>p{
+    .appCode>p{
         padding-right: 31%;
     }   
 }
 @media screen and (max-width:767px)
 {
-    .fourth_part_div1
+    .guidelinesImage
     {
        max-width: 540px;
     }
-    .fourth_part_div2
+    .guidelinesInformation
     {
        margin-left: 20px;
     }
-    .app_button>div>img
+    .appButton>div>img
     {
         width: 45%;
     }   
@@ -90,7 +90,7 @@
     {
         padding: 0;
     }
-    .app_code{
+    .appCode{
         display: none;
     }
 }
